@@ -261,11 +261,11 @@ import matplotlib.pyplot as plt
 
 theta = np.linspace(0,2*np.pi,300)
 
-# Chevrolet (forma simplificada)
+# Chevrolet 
 x1 = 2*np.cos(theta)
 y1 = np.sin(theta)
 
-# Hyundai (óvalo)
+# Hyundai 
 x2 = 3*np.cos(theta)
 y2 = 1.5*np.sin(theta)
 
@@ -274,5 +274,9 @@ plt.plot(x2,y2)
 plt.axis("equal")
 plt.title("Contornos aproximados")
 plt.grid()
+
+
+
+
 plt.show()
 
