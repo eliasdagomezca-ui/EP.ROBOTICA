@@ -62,26 +62,21 @@ print("Cilíndricas (r,θ,z):", r, theta, z_cil)
 print("Esféricas (ρ,θ,φ):", rho, theta, phi)
 
 4.
-#ECUACIONES
-PRIMERA ECUACION
-Para temperaturas T ≥ 0°C
-Ecuación cuadrática:
-R(T)=R0​(1+AT+BT^2)
+def pt100(T):
+    R0 = 100
+    A = 3.9083e-3
+    B = -5.775e-7
+    C = -4.183e-12
 
-SEGUNDA ECUACION
-Para temperaturas T < 0°C
-Ecuación cúbica:
-R(T)=R0​(1+AT+BT^2+C(T−100)T^3)
+    if T >= 0:
+        R = R0 * (1 + A*T + B*T**2)
+    else:
+        R = R0 * (1 + A*T + B*T**2 + C*(T-100)*T**3)
 
-R0 = 100
-A = 3.9083e-3
-B = -5.775e-7
+    return R
 
-T = 50  # Temperatura ejemplo
-
-R = R0 * (1 + A*T + B*T**2)
-
-print("Resistencia PT100:", R, "Ohm")
+print("R a 50°C:", pt100(50), "Ohm")
+print("R a -50°C:", pt100(-50), "Ohm")
 
 5.
 import numpy as np
