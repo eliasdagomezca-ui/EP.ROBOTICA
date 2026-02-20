@@ -62,6 +62,17 @@ print("Cilíndricas (r,θ,z):", r, theta, z_cil)
 print("Esféricas (ρ,θ,φ):", rho, theta, phi)
 
 4.
+#ECUACIONES
+PRIMERA ECUACION
+Para temperaturas T ≥ 0°C
+Ecuación cuadrática:
+R(T)=R0​(1+AT+BT^2)
+
+SEGUNDA ECUACION
+Para temperaturas T < 0°C
+Ecuación cúbica:
+R(T)=R0​(1+AT+BT^2+C(T−100)T^3)
+
 R0 = 100
 A = 3.9083e-3
 B = -5.775e-7
