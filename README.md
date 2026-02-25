@@ -123,6 +123,13 @@ F_retroceso = P * A_retroceso
 print("Fuerza Avance:", F_avance, "N")
 print("Fuerza Retroceso:", F_retroceso, "N")
 
+
+
+
+
+
+
+
 B. Con interacción de consola (fprintf o disp) y teclado (input)
 1.
 V = float(input("Ingrese Voltaje: "))
@@ -185,6 +192,18 @@ respuesta = ""
 
 while respuesta.lower() != "no":
     respuesta = input("Desea continuar Si/No? ")
+
+
+
+
+
+
+
+
+
+
+
+    
 
 C. Uso de las funciones para graficar
 1.
